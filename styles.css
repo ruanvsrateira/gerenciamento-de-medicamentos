@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --blue: #76BEBE;
+    --pink: #CF509C;
+}
+
+/* Reseting default properties */
+* {
+    margin: 0; padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: rgba(240, 196, 230, 0.26)
+}
+
+header {
+    background: var(--blue);
+
+    width: 100%;
+    height: 100px;
+}
+
+header nav {
+    font-family: "Raleway";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+header nav a{
+    color: #FFF;
+}
+
+.apresentation-sec {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.apresentation-sec div img {
+    width: 261px;
+}
+
+.apresentation-sec div:last-child h1{
+    color: #CF509C;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.apresentation-sec div:last-child h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.apresentation-sec div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.medication-sec {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: transparent;
+    margin-top: 24px;
+}
+
+.medication-sec div {
+    min-height: 300px;
+}
+
+.medication-sec div:first-child {
+    width: 30%;
+    display: flex;
+    margin-left: auto;
+}
+
+.medication-sec div:last-child {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.medication-sec .form-container form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    width: 100%;
+}
+
+.medication-sec .form-container form input {
+    margin-bottom: 20px;
+    height: 35px;
+    border: none;
+    padding-left: 7px;
+    width: 100%;
+}
+
+.medication-sec .form-container form button {
+    width: 200px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #76BEBE;
+    border: none;
+    color: #FFF;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.medication-sec .medication-data-container table {
+    font-family: 'Alegreya Sans SC';
+    border-collapse: collapse;
+    border: #3E3D3D;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.medication-sec .medication-data-container table thead th {
+    background-color: #3E3D3D;
+    color: #FFF;
+}
+
+.medication-sec .medication-data-container table tbody td {
+    text-align: center;
+}
+
+table tbody tr td img {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    body {
+        width: 100vw;
+    }
+
+    header, nav {
+        width: 100vw;
+        height: auto;
+    }
+    
+    header nav {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .apresentation-sec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-top: 20px;
+    }
+
+    .medication-sec {
+        flex-direction: column!important;
+        align-items: center!important;
+        width: 100%;
+        height: auto;
+    }
+
+    .medication-sec .form-container {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medication-sec form {
+        width: 90% !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+    }
+
+    .medication-sec button {
+        width: 100% !important;
+    }
+
+    .medication-data-container {
+        width: 90% !important;
+        padding: 0px 0px;
+        overflow-x: auto;
+    }
+
+    .medication-data-container table {
+        width: 100% !important;
+    }
+
+}
