@@ -158,6 +158,10 @@ header nav a{
     text-align: center;
 }
 
+table tbody{
+    background-color: #FFF;
+}
+
 table tbody tr td img {
     cursor: pointer;
 }
@@ -192,6 +196,7 @@ table tbody tr td img {
         width: 100%;
         height: auto;
     }
+    
 
     .medication-sec .form-container {
         width: 100% !important;
