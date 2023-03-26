@@ -183,7 +183,7 @@ table tbody tr td img {
         align-items: center;
         justify-content: center;
         gap: 0;
-        margin-top: 20px;
+        padding: 20px 0;
     }
 
     .medication-sec {
